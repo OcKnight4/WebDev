@@ -21,7 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Please enter a valid email.");
             return;
         }
-        // Perform sign-up logic here (e.g., save to local storage)
+        // Check if any field is blank
+        if (!signupForm.checkValidity()) {
+            alert("All fields are required.");
+            return;
+        }
         alert("User signed up successfully!");
     });
 
@@ -62,7 +66,14 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         const title = document.getElementById('title').value;
         const description = document.getElementById('description').value;
+        const date = new Date().toISOString().split('T')[0];  // Get current date in YYYY-MM-DD format
+        const createdBy = user.username;
+
         // Create new survey logic here (e.g., add to surveys list)
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${title}</strong><br>${description}<br>${date}<br>Created by: ${createdBy}`;
+        surveyList.appendChild(li);
+
         alert("Survey created successfully!");
     });
 
