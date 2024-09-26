@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Surveys</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span id="username"></span></h1>
+        <p>Your surveys are listed below.</p>
+        <button id="logout">Log Out</button>
+    </header>
+    <main>
+        <section id="surveys-section">
+            <h2>Your Surveys</h2>
+            <ul id="survey-list">
+                <!-- Surveys will be populated here -->
+            </ul>
+        </section>
+        <!-- Admin Section for Creating New Surveys -->
+        <section id="admin-section" style="display:none;">
+            <h2>Create New Survey</h2>
+            <form id="create-survey-form">
+                <label for="title">Title</label>
+                <input type="text" id="title" required>
+                <label for="description">Description</label>
+                <textarea id="description" required></textarea>
+                <button type="submit">Create Survey</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
