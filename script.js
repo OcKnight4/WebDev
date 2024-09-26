@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function() {
     // Sign Up Form Validation
     const signupForm = document.getElementById('sign-up-form');
@@ -71,3 +72,4 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'index.html';
     });
 });
+*/

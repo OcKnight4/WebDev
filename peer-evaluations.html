@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Evaluations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Peer Evaluations</h1>
+        <p>Submit and view peer evaluations below.</p>
+    </header>
+
+    <main>
+        <section id="evaluation-section">
+            <h2>Submit Peer Evaluation</h2>
+            <form id="peer-evaluation-form" action="thank-you.html" method="post">
+                <label for="peer-name">Peer's Name</label>
+                <input type="text" id="peer-name" required>
+
+                <label for="evaluation-comments">Evaluation Comments</label>
+                <textarea id="evaluation-comments" required></textarea>
+                
+                <button type="submit">Submit Evaluation</button>
+            </form>
+        </section>
+
+        <section id="past-evaluations">
+            <h2>Past Evaluations</h2>
+            <ul>
+                <li>Evaluation for John Doe: "Great collaborator!"</li>
+                <li>Evaluation for Jane Smith: "Needs to work on communication skills."</li>
+                <!-- More evaluations can be added here -->
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
